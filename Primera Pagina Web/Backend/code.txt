@@ -1,0 +1,29 @@
+<?php
+if(isset($_POST['enviar'])){
+    $mail=$_POST['mail'];
+    $pass=$_POST['passs'];
+    $conexion=mysqli_connect('localhost', 'root','','negro');
+    $sql="Select * from usuario where correo='" .$mail."'";
+    $reg=mysqli_query($conexion,$sql);
+    if ($reg) {
+        $n=mysqli_num_rows($reg);
+        if($n>0){
+            $u=mysqli_fetch_array($reg);
+            if ($u['pass']==$pass) {
+              echo "Inicio de sesión exitoso.";
+              session_start();
+              $_SESSION['correo']=$mail;
+          } else {
+              echo "Contraseña incorrecta.";
+          }
+      } else {
+          echo "Usuario no encontrado.";
+      }
+    
+    
+      }
+      mysqli_close($conexion);
+    }else{
+        echo "no Datos";
+    }
+?>

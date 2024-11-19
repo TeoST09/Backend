@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="../crud/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import '@material/web/all.js';
+      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <button class="theme">    
+        <md-icon class="theme-icon">dark_mode</md-icon>
+        Cambiar Tema
+    </button>
+
+    <main>
+        <h1>Lista de Usuarios</h1>
+        <button class="add-user">
+            <md-icon>person_add</md-icon>
+        </button>
+        <section>
+            <article>
+                <img src="https://xsgames.co/randomusers/assets/avatars/male/5.jpg" alt="">
+                <div class="data">
+                    <h4>Cristian Camilo Soto</h4>
+                    <h5>ingenieroprobando.gmail.com</h5>
+                </div>
+                <div class="options">
+                    <md-icon>visibility</md-icon>
+                    <md-icon>edit</md-icon>
+                    <md-icon>delete</md-icon>
+                </div>
+
+            </article>
+            <article>
+                <img src="https://xsgames.co/randomusers/assets/avatars/female/1.jpg" alt="">
+                <div class="data">
+                    <h4>Pablo Gallego</h4>
+                    <h5>pasaap.gmail.com</h5>
+                </div>
+                <div class="options">
+                    <md-icon>visibility</md-icon>
+                    <md-icon>edit</md-icon>
+                    <md-icon>delete</md-icon>
+                </div>
+
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,352 @@
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: blue;
+    margin-top: 3%;
+    text-decoration-color: #a600f0;
+    font-style: italic;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    animation: cambiarColor 1s ease-in-out;
+}
+
+@keyframes cambiarColor {
+    from {
+        color: white;
+    }
+    to {
+        color: #ccc;
+    }
+}
+
+/*Cuerpo */
+.index{
+    position: absolute;
+    left: 45%;
+    top: 7%;
+    color: #ccc;
+    font-size: xx-large;
+}
+
+
+.place{
+text-align: center;
+color: #a600f0;
+}
+
+.search{
+    position: absolute;
+    left: 48%;
+    top: 17%;
+    width: 1000px;
+    transform: translate(-47%, -50%);
+    padding: 20px;
+}
+
+.background-image {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjRhxwtBkNOITr4CCwrewhO90yX93hOjjYs18x246HcYCm6ojTVWvsP8oWNSxyClF_3fnXhnZPMrbIWUeMpm_l38JgkbqDrSEHcIsUFbluRMfrBnLTz8mWqHBfimn6IMGkDwUSrYVf8ZRMV2M4roCGKpmVqNbW6Hm3svNawy6GWjwq7JLnUs4K4zTLuA/s3840/spider-man-PC-wallpaper-4k.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    
+}
+
+/* Register*/
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(to right, #00e3e3, #a600f0, #00ff00);
+    }
+    50% {
+        border-image-source: linear-gradient(to right, #a600f0, #00ff00, #00e3e3);
+    }
+    100% {
+        border-image-source: linear-gradient(to right, #00ff00, #00e3e3, #a600f0);
+    }
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #00e3e3, #a600f0, #00ff00);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    animation: infinite;
+}
+
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #00e3e3, #a600f0);
+    border-image-slice: 1;
+    animation: borderAnimation 1s infinite linear;
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00e3e3;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00e3e3;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+a{
+    font-size: 24px;
+    color: #00e3e3;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #292929;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #00e3e3;
+    background-color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00e3e3;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #00bebe;
+}
+
+/* Recuadroos */
+
+
+.card-containerr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 215px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 555px;
+}
+
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 30px;
+    width: 550px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #ffcc00;
+    margin-top: 20px;
+    font-size: 28px;
+}
+.price {
+    color: #00bcd4;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.info-btn {
+    background-color: rgb(0, 204, 255);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: auto;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.info-btn:hover {
+    background-color: black;
+}
+
+
+.price-btn {
+    background-color: rgb(72, 255, 0);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: auto;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.price-btn:hover {
+    background-color: #8400ff;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 333px) {
+    nav {
+        width: 100%;
+        margin-top: 0; 
+    }
+
+    .form-container {
+        max-width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto; 
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.successs {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right; 
+}

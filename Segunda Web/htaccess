@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Ocultar .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Ocultar .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# Redirigir a la página de login desde la raíz
+RewriteRule ^login$ Backend/login.html [L]
+
+# Redirigir a la página de registro
+RewriteRule ^registro$ Backend/registro.php [L]
+
+# Redirigir a la página de usuario
+RewriteRule ^usuario$ Backend/Usuario.php [L]
+
+# Redirigir a la página de inicio
+RewriteRule ^$ Front_End/index.html [L]
+</IfModule>
