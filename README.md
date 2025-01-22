@@ -18,13 +18,22 @@ Este repositorio contiene mis primeras páginas web backend desarrolladas con **
      - Inicio de sesión seguro con sesiones de PHP.
      - Hash de contraseñas usando `password_hash()`.
 
+3. **Proyecto 3: Laravel App con Varios Roles, Tienda de Catalogo**
+   - Descripción: Laravel App con Varios Roles, Tienda de Catalogo con Blade.
+   - Funcionalidades:
+     - Roles al Ingresar, Admin, Proveedor, Cliente.
+     - Reestablecer Contraseña y Confirmar Correo.
+     - Programación Orientada a Objetos con Modelo Vista y Controlador.
+
 
 ---
 
 ## Instalación y Configuración ⚙️
 
 ### Requisitos previos
-- **PHP** (Versión 7.4 o superior)
+- **PHP** (Versión 8.4 o superior)
+- **COMPOSER** (Para Librerias)
+- **Sail o Docker**
 - **Servidor web** (Apache, Nginx, o similar)
 - **Base de datos MySQL**
 
